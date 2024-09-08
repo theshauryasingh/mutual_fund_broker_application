@@ -1,0 +1,28 @@
+/* Dashboard container */
+.dashboard-container {
+  padding: 20px;
+}
+
+/* Top section containing the dropdown */
+.top-section {
+  display: flex;
+  justify-content: flex-end; /* Aligns dropdown to the right */
+  margin-bottom: 20px;
+}
+
+/* API source dropdown */
+.api-source-dropdown {
+  padding: 5px;
+  font-size: 16px;
+}
+
+/* Error message */
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Funds list styling */
+.funds-list {
+  /* Add additional styling if needed */
+}

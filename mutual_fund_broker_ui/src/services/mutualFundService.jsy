@@ -1,0 +1,29 @@
+import axios from 'axios';
+
+const API_URL = "http://localhost:8000"
+
+export const getFunds = async () => {
+  const token = localStorage.getItem('token');
+  if (!token) {
+    throw new Error('No token found');
+  }
+  
+  console.log(' .. getfunds service token ', token)
+
+  try {
+    const response = await axios.get(`${API_URL}/mutual-funds`, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
+
+    return response.data;  // Return the data from the response
+  } catch (error) {
+    throw error;  // Throw error if request fails
+  }
+};
+
+
+export const purchase = async () => {
+
+}
